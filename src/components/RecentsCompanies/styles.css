@@ -1,0 +1,37 @@
+.recents-companies-component {
+  display: flex;
+  flex-direction: column;
+}
+
+.recents-companies-component .top {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  width: 100%;
+
+  margin-bottom: 17px;
+}
+
+.recents-companies-component .top .arrows {
+  flex: 1;
+
+  display: flex;
+  justify-content: flex-end;
+  gap: 24px;
+
+  color: var(--primary-color);
+}
+
+.recents-companies-component .top .arrows .icon {
+  cursor: pointer;
+}
+
+.recents-companies-component .recents-companies {
+  display: flex;
+  gap: 21px;
+
+  width: 100%;
+
+  overflow: auto;
+}

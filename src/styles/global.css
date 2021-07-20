@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-family: "Rubik", sans-serif;
+}
+
+html,
+body,
+#root {
+  width: 100vw;
+  height: 100vh;
+  color: var(--text-color);
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+input {
+  background-color: var(--input-background);
+  color: inherit;
+}
+
+/* Custom scroll */
+
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--input-background);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--gray2);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--primary-color);
+}

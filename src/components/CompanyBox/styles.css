@@ -1,0 +1,41 @@
+.company-box-component {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+
+  background-color: var(--background);
+
+  padding: 16px;
+
+  border-radius: 8px;
+
+  cursor: pointer;
+}
+
+.company-box-component .fav-button {
+  background-color: transparent;
+  width: fit-content;
+  height: fit-content;
+}
+
+.company-box-component .star-icon {
+  color: var(--primary-color);
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+}
+
+.company-box-component .description {
+  width: 115px;
+}
+
+.company-box-component .description p {
+  color: var(--gray2);
+}
+
+.company-box-component .status {
+  display: flex;
+  gap: 7px;
+
+  color: var(--success-color);
+}

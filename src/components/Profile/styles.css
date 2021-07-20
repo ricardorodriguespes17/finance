@@ -1,0 +1,128 @@
+.profile-component {
+  display: flex;
+  flex-direction: column;
+
+  width: 394px;
+  height: 100%;
+
+  padding: 32px 20px;
+}
+
+.profile-component .user-data {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  height: 40px;
+  width: 100%;
+
+  border: 1px solid #0047bb20;
+  border-radius: 120px;
+
+  padding: 4px 12px 4px 4px;
+}
+
+.profile-component .user-data img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+
+  background-color: var(--primary-color);
+}
+
+.profile-component .user-data h2 {
+  font-size: 16px;
+
+  flex: 1;
+
+  color: var(--primary-color);
+}
+
+.profile-component .user-data .arrow {
+  width: 16px;
+  height: 16px;
+
+  color: var(--secondary-color);
+}
+
+.profile-component .box-title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  margin: 38px 0 32px 0;
+}
+
+.profile-component .box-title .icon {
+  color: var(--primary-color);
+  width: 16px;
+  height: 16px;
+}
+
+.profile-component .fav-list {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 32px;
+
+  overflow: auto;
+}
+
+.profile-component .fav-list .fav-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  width: 100%;
+}
+
+.profile-component .fav-list .fav-item .box-company {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+
+  flex: 1;
+
+  background-color: var(--background);
+
+  padding: 16px;
+
+  border-radius: 8px;
+
+  box-shadow: 0 8px 20px -2px var(--shadow);
+
+  cursor: pointer;
+}
+
+.profile-component .fav-list .fav-item .box-company .star-icon {
+  color: var(--primary-color);
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+}
+
+.profile-component .fav-list .fav-item .box-company .description {
+  width: 115px;
+}
+
+.profile-component .fav-list .fav-item .box-company .description p {
+  color: var(--gray2);
+}
+
+.profile-component .fav-list .fav-item .box-company .status {
+  display: flex;
+  gap: 7px;
+
+  color: var(--success-color);
+}
+
+.profile-component .fav-list .fav-item .delete-icon {
+  width: 24px;
+  height: 24px;
+
+  cursor: pointer;
+}
+
+.profile-component .fav-list .fav-item .delete-icon:hover {
+  opacity: 0.7;
+}
