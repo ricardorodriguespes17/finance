@@ -61,9 +61,9 @@ function CompanyBox({ item }: CompanyBoxProps) {
 
       <div className="status">
         <p>
-          {`${item.changePercent >= 0 ? "+" : ""} ${item.changePercent.toFixed(
-            2
-          )}%`}
+          {`${item.changePercent >= 0 ? "+" : ""} ${(
+            item.changePercent * 100
+          ).toFixed(2)}%`}
         </p>
 
         <svg
