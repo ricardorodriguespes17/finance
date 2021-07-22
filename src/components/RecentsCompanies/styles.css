@@ -1,6 +1,7 @@
 .recents-companies-component {
   display: flex;
   flex-direction: column;
+  flex: 1;
 }
 
 .recents-companies-component .top {
@@ -33,5 +34,5 @@
 
   width: 100%;
 
-  overflow: auto;
+  overflow: hidden;
 }

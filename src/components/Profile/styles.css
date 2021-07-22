@@ -76,46 +76,6 @@
   width: 100%;
 }
 
-.profile-component .fav-list .fav-item .box-company {
-  display: flex;
-  align-items: center;
-  gap: 16px;
-
-  flex: 1;
-
-  background-color: var(--background);
-
-  padding: 16px;
-
-  border-radius: 8px;
-
-  box-shadow: 0 8px 20px -2px var(--shadow);
-
-  cursor: pointer;
-}
-
-.profile-component .fav-list .fav-item .box-company .star-icon {
-  color: var(--primary-color);
-  width: 16px;
-  height: 16px;
-  cursor: pointer;
-}
-
-.profile-component .fav-list .fav-item .box-company .description {
-  width: 115px;
-}
-
-.profile-component .fav-list .fav-item .box-company .description p {
-  color: var(--gray2);
-}
-
-.profile-component .fav-list .fav-item .box-company .status {
-  display: flex;
-  gap: 7px;
-
-  color: var(--success-color);
-}
-
 .profile-component .fav-list .fav-item .delete-icon {
   width: 24px;
   height: 24px;

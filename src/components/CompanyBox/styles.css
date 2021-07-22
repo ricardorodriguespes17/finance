@@ -9,9 +9,12 @@
 
   border-radius: 8px;
 
-  min-width: fit-content;
+  width: 100%;
+  height: 100px;
 
   cursor: pointer;
+
+  box-shadow: 0 8px 20px -2px var(--shadow);
 }
 
 .company-box-component .fav-button {
@@ -28,7 +31,7 @@
 }
 
 .company-box-component .description {
-  width: 115px;
+  width: 140px;
 }
 
 .company-box-component .description p {
@@ -39,5 +42,13 @@
   display: flex;
   gap: 7px;
 
+  min-width: fit-content;
+}
+
+.company-box-component .status p.negative {
+  color: var(--danger-color);
+}
+
+.company-box-component .status p.positive {
   color: var(--success-color);
 }

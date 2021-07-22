@@ -36,7 +36,7 @@ function Profile() {
             className="fav-item"
             onClick={() => dispatch(changeStockInChart(item))}
           >
-            <CompanyBox item={item} />
+            <CompanyBox item={item} isOnFavList={true} />
 
             <CgTrash
               className="delete-icon"

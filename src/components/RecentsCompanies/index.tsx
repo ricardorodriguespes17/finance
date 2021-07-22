@@ -10,6 +10,17 @@ function RecentsCompanies() {
     (state: StockStateType) => state.recents
   );
 
+  function changeScroll(position: number) {
+    const element = document.getElementById("recents-companies");
+
+    if (element) {
+      element.scrollTo({
+        left: element.scrollLeft + position,
+        behavior: "smooth",
+      });
+    }
+  }
+
   return (
     <div className="recents-companies-component">
       <div className="top">
@@ -40,12 +51,12 @@ function RecentsCompanies() {
         <h2>Empresas recentes</h2>
 
         <div className="arrows">
-          <BsChevronLeft className="icon" />
-          <BsChevronRight className="icon" />
+          <BsChevronLeft className="icon" onClick={() => changeScroll(-350)} />
+          <BsChevronRight className="icon" onClick={() => changeScroll(350)} />
         </div>
       </div>
 
-      <div className="recents-companies">
+      <div id="recents-companies" className="recents-companies">
         {recentsCompanies.map((item) => (
           <CompanyBox item={item} />
         ))}

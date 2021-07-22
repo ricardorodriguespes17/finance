@@ -18,6 +18,11 @@ export default function stockReducer(
 ) {
   switch (action.type) {
     case ADD_FAV:
+      if (
+        state.favorities.some((item) => item.symbol === action.payload.symbol)
+      ) {
+        return state;
+      }
       return { ...state, favorities: state.favorities.concat(action.payload) };
     case ADD_RECENTS:
       if (state.recents.some((item) => item.symbol === action.payload.symbol)) {
