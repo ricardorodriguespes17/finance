@@ -1,7 +1,7 @@
 import { CgTrash } from "react-icons/cg";
 import { BsCaretDownFill, BsStarFill } from "react-icons/bs";
 import { useDispatch, useSelector } from "react-redux";
-import { ProfileBarStateType, StockStateType, StoreType } from "../../types";
+import { StoreType } from "../../types";
 import CompanyBox from "../CompanyBox";
 import {
   changeStockInChart,
