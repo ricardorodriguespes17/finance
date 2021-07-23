@@ -1,13 +1,13 @@
 import { BsChevronLeft, BsChevronRight } from "react-icons/bs";
 import { useSelector } from "react-redux";
-import { StockStateType } from "../../types";
+import { StoreType } from "../../types";
 import CompanyBox from "../CompanyBox";
 
 import "./styles.css";
 
 function RecentsCompanies() {
   const recentsCompanies = useSelector(
-    (state: StockStateType) => state.recents
+    (store: StoreType) => store.stock.recents
   );
 
   function changeScroll(position: number) {
@@ -57,9 +57,8 @@ function RecentsCompanies() {
       </div>
 
       <div id="recents-companies" className="recents-companies">
-        {recentsCompanies.map((item) => (
-          <CompanyBox item={item} />
-        ))}
+        {recentsCompanies &&
+          recentsCompanies.map((item) => <CompanyBox item={item} />)}
       </div>
     </div>
   );

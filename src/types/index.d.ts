@@ -43,3 +43,17 @@ export interface ChartType {
   minutes: string;
   open: number;
 }
+
+export interface ProfileBarStateType {
+  isShowBar: boolean;
+}
+
+export interface ProfileBarActionType {
+  type: string;
+  payload: undefined;
+}
+
+export interface StoreType {
+  profileBar: ProfileBarStateType;
+  stock: StockStateType;
+}

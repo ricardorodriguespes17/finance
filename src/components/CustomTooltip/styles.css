@@ -21,11 +21,3 @@
 
   border-radius: 4px;
 }
-
-.tooltip-component .arrow {
-  width: 0;
-  height: 0;
-  border-left: 9px solid transparent;
-  border-right: 9px solid transparent;
-  border-top: 9px solid var(--primary-color);
-}

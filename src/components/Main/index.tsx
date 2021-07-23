@@ -9,7 +9,7 @@ import {
   AreaChart,
   Area,
 } from "recharts";
-import { ChartType, StockStateType, StockType } from "../../types";
+import { ChartType, StockType, StoreType } from "../../types";
 import CustomTooltip from "../CustomTooltip";
 import RecentsCompanies from "../RecentsCompanies";
 import { useDispatch, useSelector } from "react-redux";
@@ -32,8 +32,8 @@ function Main() {
 
   const [chartPoints, setChartPoints] = useState<ChartType[]>([]);
 
-  const favorities = useSelector((state: StockStateType) => state.favorities);
-  const stock = useSelector((state: StockStateType) => state.stockInChart);
+  const favorities = useSelector((store: StoreType) => store.stock.favorities);
+  const stock = useSelector((store: StoreType) => store.stock.stockInChart);
   const [stockIsFav, setStockIsFav] = useState(false);
 
   const [isLoading, setIsLoading] = useState(false);

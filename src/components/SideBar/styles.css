@@ -66,9 +66,9 @@
   background-color: var(--secondary-color);
 }
 
-.side-bar-component .change-theme {
+.side-bar-component .button-bottom-bar {
   width: 100%;
-  height: 100px;
+  height: 70px;
 
   background-color: transparent;
   color: inherit;
@@ -78,6 +78,20 @@
   font-size: 24px;
 }
 
-.side-bar-component .change-theme:hover {
+.side-bar-component .button-bottom-bar:hover {
   opacity: 0.7;
+}
+
+#open-close-bar {
+  display: none;
+}
+
+@media (max-width: 900px) {
+  #open-close-bar {
+    display: block;
+  }
+
+  .side-bar-component {
+    width: 60px;
+  }
 }

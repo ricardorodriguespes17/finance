@@ -6,7 +6,7 @@ import {
   changeStockInChart,
   removeFav,
 } from "../../store/actions/stock.actions";
-import { StockStateType, StockType } from "../../types";
+import { StockType, StoreType } from "../../types";
 import "./styles.css";
 
 interface CompanyBoxProps {
@@ -17,7 +17,7 @@ interface CompanyBoxProps {
 function CompanyBox({ item, isOnFavList }: CompanyBoxProps) {
   const [isFavorite, setIsFavorite] = useState(false);
 
-  const favorities = useSelector((state: StockStateType) => state.favorities);
+  const favorities = useSelector((store: StoreType) => store.stock.favorities);
 
   const dispatch = useDispatch();
 
@@ -31,7 +31,11 @@ function CompanyBox({ item, isOnFavList }: CompanyBoxProps) {
 
   return (
     <div
-      className="company-box-component"
+      className={
+        isOnFavList
+          ? "company-box-component on-fav-list"
+          : "company-box-component"
+      }
       onClick={() => dispatch(changeStockInChart(item))}
     >
       {!isOnFavList && (

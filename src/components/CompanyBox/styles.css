@@ -9,12 +9,15 @@
 
   border-radius: 8px;
 
-  width: 100%;
   height: 100px;
 
   cursor: pointer;
 
   box-shadow: 0 8px 20px -2px var(--shadow);
+}
+
+.company-box-component.on-fav-list {
+  width: 100%;
 }
 
 .company-box-component .fav-button {

@@ -25,7 +25,6 @@ function CustomTooltip({ payload }: CustomTooltipProps) {
   return (
     <div className="tooltip-component">
       <label>{value}</label>
-      <div className="arrow" />
     </div>
   );
 }
