@@ -12,6 +12,7 @@ import {
 import { ChartType, StockType, StoreType } from "../../types";
 import CustomTooltip from "../CustomTooltip";
 import RecentsCompanies from "../RecentsCompanies";
+import News from "../News";
 import { useDispatch, useSelector } from "react-redux";
 import {
   addFav,
@@ -19,13 +20,12 @@ import {
   changeStockInChart,
   removeFav,
 } from "../../store/actions/stock.actions";
+import { TOKEN } from "../../services/api";
 
 import api from "../../services/api";
 import formatUSDCurrency from "../../utils/formatUSDCurrency";
 
 import "./styles.css";
-
-const TOKEN = process.env.REACT_APP_IEX_TOKEN;
 
 function Main() {
   const [stockSymbol, setStockSymbol] = useState("AAPL");
@@ -288,6 +288,8 @@ function Main() {
           )}
         </div>
       </div>
+
+      <News />
 
       <RecentsCompanies />
     </div>

@@ -57,3 +57,10 @@ export interface StoreType {
   profileBar: ProfileBarStateType;
   stock: StockStateType;
 }
+
+export interface NewsType {
+  datetime: number;
+  headline: string;
+  summary: string;
+  image: string;
+}
